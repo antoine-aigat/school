@@ -106,7 +106,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pop-up Discord</title>
+    <title>Site Web avec Pop-up</title>
     <style>
         /* Style pour la pop-up */
         .popup {
@@ -143,8 +143,6 @@
     </style>
 </head>
 <body>
-    <button onclick="openPopup()">Ouvrir la Pop-up</button>
-
     <!-- La pop-up -->
     <div id="myPopup" class="popup">
         <div class="popup-content">
@@ -157,6 +155,11 @@
     </div>
 
     <script>
+        // Fonction pour ouvrir la pop-up au chargement de la page
+        window.onload = function() {
+            openPopup();
+        }
+
         // Fonction pour ouvrir la pop-up
         function openPopup() {
             document.getElementById("myPopup").style.display = "block";
@@ -167,5 +170,4 @@
             document.getElementById("myPopup").style.display = "none";
         }
     </script>
-</body>
 </html>
