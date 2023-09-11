@@ -1,1 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations importantes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        /* Style pour les nouveaux boutons */
+        .new-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .new-button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+        }
 
+        /* Style pour le rectangle avec boutons */
+        .rectangle {
+            text-align: center;
+            width: 300px; /* Largeur du rectangle réduite */
+            background-color: #ccc; /* Couleur de fond gris */
+            border-radius: 20px; /* Bords arrondis */
+            margin: 20px auto; /* Centrer horizontalement et ajouter une marge en haut */
+            padding: 20px;
+        }
+
+        /* Style pour les boutons à l'intérieur du rectangle */
+        .rectangle .button {
+            display: block;
+            width: 93%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: green; /* Couleur de fond verte */
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s; /* Animation de transition */
+        }
+
+        .rectangle .button:hover {
+            background-color: rgb(111, 168, 111); /* Couleur de fond verte foncée au survol */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ELECTIONS DELEGUE</h1>
+    </header>
+    <div class="container">
+        <p>J'aimerais être le délégué de cette 4e3 cette année. <p>
+        <p>Ce serai un honneur d'être délégué de cette classe. <p>
+        <p>__________________________________________________________________________________________</p>
+        <p>Mon programme : <p>
+        <p>Aider tout le monde à travailler. <p>
+        <p>Aider la classe à avancer. <p>
+        <p>Et si possible organiser des sorties. </p>
+        <p>Je n'ai pas envie de vous vendre du rêve, si nous ne travaillons pas tous ensembles rien n'est possible.</p>
+        <p>Sans vous rien n'est possible alors nous devons tous donner le meilleur de nous mêmes.</p>
+        <p>__________________________________________________________________________________________</p>
+        <p>Mes actions : </p>
+        <p>En tant que délégué je serai présent aux conseils de classe, j'essayerai  de vous expliquer ce qu'il faudra améliorer selon le conseil.</p>
+        <p>Si vous avez un problème venez me voir et je vous aiderais dans le possible.</p>
+        <p>Si vous avez besoin de parler je suis là pour vous écouter.</p>
+        <p>__________________________________________________________________________________________</p>
+        <p>Délégué ce n'est pas seulement assister aux conseils de classe, c'est aussi accompagner ses camarades pour créer une classe soudée.</p>
+        <p>Merci d'avoir pris le temps de lire ceci.</p>
+        <!-- Rectangle avec boutons -->
+        <div class="rectangle">
+            <a class="button" href="https://falco.my.canva.site/antoine-school" target="_blank">Home</a>
+        </div>
+    </div>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Web avec Pop-up</title>
+    <style>
+        /* Style pour la pop-up */
+        .popup {
+            text-align: center;
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+        }
+
+        /* Style pour la fenêtre de la pop-up */
+        .popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Style pour le bouton de fermeture (croix rouge) */
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            color: red;
+        }
+
+        /* Style pour le bouton "Discord" */
+        .discord-button {
+            text-align: center;
+            background-color: #007BFF; /* Couleur bleue */
+            color: #fff; /* Texte blanc */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration:rgb(111, 168, 111);
+            display: inline-block;
+        }
+
+        .discord-button:hover {
+            background-color: #0056b3; /* Couleur bleue plus foncée au survol */
+        }
+    </style>
+</head>
+<body>
+    <!-- La pop-up -->
+    <div id="myPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup()">&times;</span>
+            <h2>Rejoins mon Discord</h2>
+            <a href="https://discord.gg/z3vZPXmQzm" target="_blank">
+                <button class="discord-button">Discord</button>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Fonction pour ouvrir la pop-up au chargement de la page
+        window.onload = function() {
+            openPopup();
+        }
+
+        // Fonction pour ouvrir la pop-up
+        function openPopup() {
+            document.getElementById("myPopup").style.display = "block";
+        }
+
+        // Fonction pour fermer la pop-up
+        function closePopup() {
+            document.getElementById("myPopup").style.display = "none";
+        }
+    </script>
+</body>
+</html>
