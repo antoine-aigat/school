@@ -103,6 +103,10 @@
         </div>
     </div>
 </body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -140,6 +144,23 @@
             font-size: 20px;
             color: red;
         }
+
+        /* Style pour le bouton "Discord" */
+        .discord-button {
+            background-color: #007BFF; /* Couleur bleue */
+            color: #fff; /* Texte blanc */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .discord-button:hover {
+            background-color: #0056b3; /* Couleur bleue plus foncée au survol */
+        }
     </style>
 </head>
 <body>
@@ -149,7 +170,7 @@
             <span class="close-button" onclick="closePopup()">&times;</span>
             <h2>Rejoins mon Discord</h2>
             <a href="https://discord.gg/z3vZPXmQzm" target="_blank">
-                <button>Discord</button>
+                <button class="discord-button">Discord</button>
             </a>
         </div>
     </div>
@@ -170,4 +191,5 @@
             document.getElementById("myPopup").style.display = "none";
         }
     </script>
+</body>
 </html>
